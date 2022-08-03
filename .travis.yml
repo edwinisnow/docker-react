@@ -1,4 +1,3 @@
-language: generic
 sudo: required
 services:
   - docker
@@ -7,4 +6,4 @@ services:
   - docker build -t edwinisnow/docker-react -f Dockerfile.dev .
 
   script:
-    - docker run -e CI=true edwinisnow/docker-react npm run test
+    - docker run edwinisnow/docker-react npm run test
